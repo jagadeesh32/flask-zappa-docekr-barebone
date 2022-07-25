@@ -1,0 +1,10 @@
+{
+    "dev": {
+        "app_function": "main.app",
+        "aws_region": "ap-south-1",
+        "profile_name": "default",
+        "project_name": "my-lambda-function",
+        "runtime": "python3.8",
+        "s3_bucket": "my-lambda-function"
+    }
+}   

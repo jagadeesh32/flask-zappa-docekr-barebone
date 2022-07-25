@@ -1,0 +1,9 @@
+# To generate zappa settings.py file
+
+zappa save-python-settings-file <zappa-state> -o zappa_settings.py
+zappa save-python-settings-file dev -o zappa_settings.py
+
+# build docekr image
+docker build -t lambda-docker-flask:latest .
+
+docker run -p 9000:8080 my-lambda-app:latest
