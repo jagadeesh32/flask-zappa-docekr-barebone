@@ -7,6 +7,10 @@ app = Flask(__name__)
 def index(): 
     return "Hello, world!", 200 
 
+@app.route('/test') 
+def test(): 
+    return "Hello, Test!", 200 
+
 
 # We only need this for local development. 
 if __name__ == '__main__': 
